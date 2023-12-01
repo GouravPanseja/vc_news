@@ -26,7 +26,7 @@ function App() {
             // window.open(results[number].link, '_blank');
 
             if( number <= 9 && number >=0){
-              window.open(results[number].link, '_blank' )
+              window.open(results[number].link , '_self' )
             }
             else{
               console.log("fuddu")
