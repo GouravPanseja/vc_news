@@ -11,7 +11,7 @@ const NewsCard = ({article , index,activeArticleIndex}) => {
     if(description && description.length > 150){ description=  description.slice(0,150)};
     
   return (
-    <Card className={`  h-[450px] w-[350px] m-4 flex flex-col justify-between items-center box-border ${ activeArticleIndex===index ? "border-b-[10px] border-purple-800" : null}`}>
+    <Card className={` md:h-[350px] md:w-[250px]  h-[450px] w-[350px] m-4 flex flex-col justify-between items-center box-border ${ activeArticleIndex===index ? "border-b-[10px] border-purple-800" : null}`}>
         <CardActionArea href={link} target="_blank ">
             <CardMedia className="h-[150px] w-full object-cover" image={image_url || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdD0VrpCK1oZDuGiy_9MqptMIJBPP4QVKWyXoxwgPDQep3W1TOGyOJYhdB9KLrFiUEBeM&usqp=CAU'} />
             <div className="p-4 pb-0">
