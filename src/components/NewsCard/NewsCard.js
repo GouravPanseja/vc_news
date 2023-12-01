@@ -26,7 +26,7 @@ const NewsCard = ({article , index,activeArticleIndex}) => {
                 <Typography className="p-0" variant="body2" color="textSecondary" component="p">{description}...</Typography>
             </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions className="flex justify-between px-2">
             <Button size="small" color="primary">Learn More</Button>
             <Typography variant="h5" color="textSecondary">{index+1}</Typography>
         </CardActions>

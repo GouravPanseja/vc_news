@@ -32,7 +32,7 @@ const NewsCards = ({articles ,activeArticleIndex}) => {
           infoCards.map((infoCard,index)=>(
             
 
-              <div className='flex flex-col justify-between h-[400px] w-[300px] rounded-md p-[30px] m-3  text-center ' style={{backgroundColor:infoCard.color }}>
+              <div className='flex flex-col justify-between md:h-[300px] md:w-[200px] h-[400px] w-[300px] rounded-md p-[30px] m-3  text-center ' style={{backgroundColor:infoCard.color }}>
                 <p className='text-[1rem]' vairient="h5"> {infoCard.title} </p>
                 {infoCard.info ? <p className='text-[1rem]' variant='h6'> <strong>{infoCard.title.split(' ')[2]}:</strong><br/>{infoCard.info}  </p>  :  null}
                 <p className='text-[1rem]' variant="h6" >Try saying: <br/> <i>{infoCard.text}</i></p>
@@ -49,6 +49,7 @@ const NewsCards = ({articles ,activeArticleIndex}) => {
   }
   return (
           <div  className={`justify-center  py-[5%] w-full m-0 flex flex-wrap  text-[2rem]  text-red-200`}>
+          <h1 className='text-[1vw] text-center '>News</h1>
       
           {
             articles.map((article,idx)=>{
